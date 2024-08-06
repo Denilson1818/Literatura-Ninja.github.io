@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Literatura-Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="web site icon" href="img/2362874.png">
+</head>
+<body>
+    
+    <!-- Cabeza del juego -->
+    <!-- Solo modificar si cambiamos el nombre del juego -->
+    <div class="gameHeading">
+        <p>Literatura-Ninja</p>
+    </div>
+
+    <!-- Color-delfondo -->
+    <canvas id="canvas"></canvas>
+
+    <!-- fondo para el cuerpo  -->
+    <!-- David no toques esto att: Marvin >:( ) -->
+    <div class="startGame" id="startGame">
+        <div class="home">
+            <h1>¿Podras con los autores? <br> <span><i class="fa-brands"></i> ¿Listo para jugar?</span></h1>
+            <button id="startGameBtn">Jugar <img class="espada-height" src="img/espadas.png" alt=""><i class="fa-solid "></i></button>
+            <p>Tu mejor punteo: <span id="homeHighScore"></span></p>
+        </div>
+        
+
+
+        <div class="copyRight contenedor-perfiles">
+            <div class="perfil-instagram">
+                <a href="https://www.instagram.com/deniis_slv/"><i class="fab fa-instagram logo-instagram"></i></a>
+                <span class="nombre">Marvin Vicente</span>
+            </div>
+            <div class="perfil-instagram">
+                <a href="https://www.instagram.com/alex.b.382/"><i class="fab fa-instagram logo-instagram"></i></a>
+                <span class="nombre">David Alvarado</span>
+            </div>
+
+    </div>
+
+    <!-- Alert Count Down Timer  -->
+    <div class="countDown" id="countDownContainer">
+        <h1></h1>
+    </div>
+
+    <!-- In Game Body -->
+    <div id="inGameContainer">
+        <div class="scoreDiv">
+            <p>Punteo: <span id="score"></span></p>
+            <p>Mejor Punteo: <span id="highScore"></span></p>
+        </div>
+        <div class="gameCountTime">
+            <h1 id="gameMinuteAndSecond">00 : 00</h1>
+        </div>
+        <div id="strikeCountDiv">
+            <h1 class="strikeCount">1x</h1>
+        </div>
+    </div>
+
+    <div id="gameEndDiv">
+        <div class="gameEndContainer">
+            <p>Your Score: <span id="endGameScore"></span></p>
+            <button id="returnHome">Return Home <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="js-add/alert.js"></script>
+</body>
+</html>
